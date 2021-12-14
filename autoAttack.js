@@ -1,6 +1,7 @@
 // Purpose of the script.
 
-moneyThresh = args[1];
+target = getHostname();
+moneyThresh = getServerMaxMoney(target) * 0.9;
 securityThresh = 25;
 
 if (fileExists("BruteSSH.exe", "home")) { //checking if our BruteSSH.exe file is in our home server (Y)
